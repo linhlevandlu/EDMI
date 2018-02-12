@@ -148,21 +148,21 @@
  \begin{columns}[c]
      \begin{column}{\bottomcolwidth}
          \centering
-         \includegraphics[height=3cm]{logos/logo_INPB.png}
+         \includegraphics[height=3cm]{logos/UBX-7.jpg}
      \end{column}
      \begin{column}{\bottomcolwidth}
          \centering
-         \includegraphics[height=3cm]{logos/logo_cnrs.png}
+         \includegraphics[height=3cm]{logos/logo_INPB.png}
      \end{column}
      \ifINRIA
      \begin{column}{\bottomcolwidth}
          \centering
-         \includegraphics[height=3cm]{logos/logo_inria.jpg}
+         \includegraphics[height=3cm]{logos/INRA_logo.jpg}%logo_inria
      \end{column}
      \fi
      \begin{column}{\bottomcolwidth}
          \centering
-         \includegraphics[height=3cm]{logos/UBX-7.jpg}
+         \includegraphics[height=3cm]{logos/logo_cnrs.png}
      \end{column}
  \end{columns}
  {}
@@ -182,7 +182,7 @@
       \vspace{-4pt}
       \begin{beamercolorbox}[wd=\inboxwd,center,rounded=true]{block inside}
           \begin{beamercolorbox}[ht=3ex,dp=1.5ex,center]{block title}
-              \usebeamerfont{block title}\large\insertblocktitle
+              \usebeamerfont{block title}\Large\insertblocktitle
               %    \begin{flushleft}
               %    \vskip-1cm
               %    \begin{tikzpicture}[remember picture,overlay]

@@ -5,8 +5,8 @@
 %---------------------------------------------------------
 % Choose the following to decide whether or not you need to include the INRIA Logo.
 
-%\INRIAtrue
-\INRIAfalse
+\INRIAtrue
+%\INRIAfalse
 
 \title{SIFT descriptor to set landmarks on biological images}
 %\subtitle{La fable ``Le Faucon et le Chapon''}
@@ -88,9 +88,62 @@
 \begin{column}{\sepwidth}\end{column} % Empty spacer column
 
 \begin{column}{\onecolwidth}
-\begin{block}{La Fable \hspace{2cm} \small{(livre II, fable 21)}}
+%\begin{block}{La Fable \hspace{2cm} \small{(livre II, fable 21)}}
+%\end{block}
+\begin{block}{Proposed method}
+	\begin{columns}[t]
+		\begin{column}{\threecolwidth}
+			
+			\begin{itemize}
+				\item \textbf{\underline{Input:}} 
+					
+					\begin{itemize}
+						\item Model image
+						\item Model manual landmarks
+						\item Scene image
+					\end{itemize}
+					
+					~\\[0.5cm]
+				\item \textbf{\underline{Output:}} 
+					
+					\begin{itemize}
+						\item Landmarks of scene image
+					\end{itemize}		  				
+					
+					~\\[0.5cm]
+  				\item \textbf{\underline{Steps:}}
+									
+  					\begin{itemize}
+  						\item Shape identification: segmentation and registration
+  						\item SIFT and landmarks
+  					\end{itemize}
+  					
+  					~\\[0.5cm]
+			\end{itemize}
+			
+		\end{column}
+		\begin{column}{\twothirdcolwidth}
+			\begin{figure}
+				\includegraphics[scale=.85]{images/method2}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	\vspace{0.2cm}
 \end{block}
 \end{column}
+
+%\begin{itemize}
+ % 		\item \textbf{\underline{Input:}} 
+	%	\begin{itemize}
+	%		\item Model image
+	%		\item Model manual landmarks
+	%		\item Scene image
+	%	\end{itemize}		  		
+  		
+  	%\end{itemize}
+	
+
+
 
 \begin{column}{\sepwidth}\end{column} % Empty spacer column
 
@@ -105,36 +158,50 @@
 
 \begin{column}{\twocolwidth}
 
-\begin{block}{Annonce}
-Une traîtresse voix bien souvent vous appelle ;\\
-Ne vous pressez donc nullement :\\
-Ce n’était pas un sot, non, non, et croyez-m’en,\\
-Que le Chien de Jean de Nivelle.
+\begin{block}{Segmentation}
+	\begin{enumerate}
+		\item Converting the image to binary one by applying a threshold determined by histogram analysis
+		\item Contours points are extracted by Canny algorithm. The thresholds ratio in Canny: $T_{lower} = (1/3) \times T^{upper}$, in which $T^{lower}$ equals to the threshold value in step 1.
+	\end{enumerate}
+\end{block}
+
+%\vspace{5pt}
+
+%\begin{alertblock}{Jean de Nivelle}
+%\textbf{Jean de Nivelle} (1422 -- 26 juin 1477) également connu sous le nom de Jean III (Ier) de Montmorency-Nevele, est un personnage français du Moyen Âge (XVe siècle) à l'origine de l'expression populaire \emph{être comme ce chien de Jean de Nivelle (qui fuit quand on l'appelle)} et dont le nom apparaît dans plusieurs chansons traditionnelles françaises.
+%\end{alertblock}
+
+\vspace{5pt}
+
+\begin{block}{Registration}
+Model and scene images are segmented to extract the contours points. The contours points are registered by applying \textbf{P}rincipal \textbf{C}omponent \textbf{A}nalysis\cite{} \textbf{I}teration (PCAI).
+ \begin{enumerate}
+    		\item Compute the centroid point and principal axis of each list of contour points,
+    		\item Compute the \textbf{translation} and \textbf{rotation} values between two lists of contour points,
+    		\item \textbf{Register} the two lists of contour points,
+    		\item Sort the contour points of scene image followed y-direction,
+    		\item Select a subset of contour points of scene image and repeat step 1,
+    		\item PCAI stop automatically when the \textbf{angle difference} between two 
+    	lists of contour points is less than \textbf{$1.5$ degree}.
+    \end{enumerate}
 \end{block}
 
 \vspace{5pt}
 
-\begin{alertblock}{Jean de Nivelle}
-\textbf{Jean de Nivelle} (1422 -- 26 juin 1477) également connu sous le nom de Jean III (Ier) de Montmorency-Nevele, est un personnage français du Moyen Âge (XVe siècle) à l'origine de l'expression populaire \emph{être comme ce chien de Jean de Nivelle (qui fuit quand on l'appelle)} et dont le nom apparaît dans plusieurs chansons traditionnelles françaises.
-\end{alertblock}
-
-\vspace{5pt}
-
-\begin{block}{Mise en place du décor}
-Un citoyen du Mans, chapon de son métier\\
-Était sommé de comparaître\\
-Par-devant les lares du maître,\\
-Au pied d’un tribunal que nous nommons foyer.\\
-Tous les gens lui criaient, pour déguiser la chose :\\
-\begin{quote}
-`` Petit, petit, petit ! ''
-\end{quote}
- Mais, loin de s’y fier,\\
-Le Normand et demi laissait les gens crier.\\
-\begin{quote}
-`` Serviteur, disait-il ; votre appât est grossier :
-On ne m’y tient pas ; et pour cause.''
-\end{quote}
+\begin{block}{SIFT and landmarks}
+\begin{figure}
+    	 \centering
+    	 \includegraphics[width=0.7\textwidth]{images/illustration}
+    \end{figure}
+    \begin{enumerate}
+    		\item A \textbf{patch} $P_m$ is initialized at each manual landmark of model image (size of $9\times9$),
+    		\item Calculating the SIFT descriptor for $P_m$,
+    		\item At the same position in the scene image, a patch $P_s$ is created (size of $36\times36$),
+    		\item For each pixel in $P_s$, a patch $P'_s$ is extracted with the same size than $P_m$,
+    		\item Calculating the SIFT descriptor for all $P'_s$,
+    		\item Computing the distance between the descriptor of $P_m$ and each $P'_m$,
+    		\item At the end, the pixel that has the \textbf{minimum distance} with $P_m$ is kept.
+    \end{enumerate}
 \end{block}
 
 \end{column}
@@ -145,12 +212,12 @@ On ne m’y tient pas ; et pour cause.''
 
 
 \begin{figure}
-\includegraphics[width=\textwidth]{jean_de_nivelle.jpg}
+\includegraphics[width=0.7\textwidth]{images/mg_chartlms}
+\end{figure}~\\[0.1cm]
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{images/md_chartlms}
 \end{figure}
 
-\begin{alertblock}{Le Mans}
-Le Mans est le chef-lieu du département de la Sarthe: on y faisait grand commerce de volailles engraissées. On disait des manceaux bien portants qu'ils valaient $1.5$ normand.
-\end{alertblock}
 \end{column}
 
 \begin{column}{\sepwidth}\end{column}
@@ -164,7 +231,7 @@ Le Mans est le chef-lieu du département de la Sarthe: on y faisait grand commer
 \begin{column}{\sepwidth}\end{column} % Empty spacer column
 
 \begin{column}{\onecolwidth}
-\begin{block}{L'apparition du Faucon}
+\begin{block}{Conclusion}
 Cependant un Faucon sur sa perche voyait -- 
 Notre Manceau qui s’enfuyait. -- 
 Les chapons ont en nous fort peu de confiance, --  
@@ -179,6 +246,42 @@ Se serait passée aisément.
 \begin{column}{\sepwidth}\end{column} % Empty spacer column
 
 \end{columns}
+
+\begin{columns}[t] 
+
+\begin{column}{\sepwidth}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwidth}
+\begin{block}{References}
+Cependant un Faucon sur sa perche voyait -- 
+Notre Manceau qui s’enfuyait. -- 
+Les chapons ont en nous fort peu de confiance, --  
+Soit instinct, soit expérience.\\
+Celui-ci, qui ne fut qu’avec peine attrapé, -- 
+Devait, le lendemain, être d’un grand souper, -- 
+Fort à l’aise en un plat, honneur dont la volaille -- 
+Se serait passée aisément.
+\end{block}
+\end{column}
+
+\begin{column}{\sepwidth}\end{column} % Empty spacer column
+
+\end{columns}
+
+
+\end{frame}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
 
 % ------------ Changing number of columns in the width ------------
 
@@ -385,9 +488,3 @@ Certes cet oiseau ne ressemble ni à un chapon, ni à un faucon. Léon! Serait-c
 \begin{column}{\sepwidth}\end{column} % Empty spacer column
 
 \end{columns}
-
-
-\end{frame}
-
-
-\end{document}
