@@ -2,9 +2,8 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{subfig}
-\usepackage[export]{adjustbox}
-\usepackage{amsmath,enumerate}
-\usepackage{multicol}
+\usepackage{biblatex}
+\addbibresource{references.bib}
 %---------------------------------------------------------
 % Choose the following to decide whether or not you need to include the INRIA Logo.
 
@@ -39,24 +38,42 @@
 
 \begin{column}{\sepwidth}\end{column} % Empty spacer column
 
-\begin{column}{\onecolwidth}
+\begin{column}{\threecolwidth}
+
+\begin{figure}[h]
+\centering
+\subfloat[Left mandible]{\label{figrbox2}\includegraphics[scale=0.32]{./images/mg19_sp}}~~
+\subfloat[Right mandible]{\label{figrbox1}\includegraphics[scale=0.32]{./images/md28_sp}}
+\caption{Example of beetle mandibles from the studied data set with
+  manual landmarks.}
+\label{fig1}
+\end{figure}
+
+\end{column}
+
+\begin{column}{\sepwidth}\end{column} % Empty spacer column
+
+\begin{column}{\twothirdcolwidth}
  \begin{alertblock}{Context}
-	Morphometry analysis is a way to characterize the shape variations of the organisms. The information was analyzed come from morphometric characteristics. They have been used to evaluate the evolution of an organism, by finding new or sharpening definition of old one. Morphometrics is also used to \textbf{classify} the objects in different groups.
+	Morphometry analysis is a way to characterize the shape variations of the organisms. Morphometric characteristics have been used to evaluate the evolution of an organism, by finding new or sharpening definition of old one. Morphometrics are also used to \textbf{classify} the objects in different groups.
+  %\begin{flushright}
+   %\small{[source: Wikipedia]}
+  %\end{flushright}
  \end{alertblock}
  
  \begin{block}{Landmarks}
  	\begin{itemize}
-  		\item Morphometric landmarks are points of interest in the biological object. They usually stay along the outline of the image.\\[0.3cm]
+  		\item Morphometric landmarks are points of interest in biological object,\\[0.3cm]
   		\item Landmarks characterize specificities through the shape most often linked to biological information,\\[0.3cm]
   		\item They are usually \textbf{defined} by biologists \textbf{manually},\\[0.3cm]
   		\item Images show manual landmarks in \textbf{beetle mandibles} belonging to our sample. 
   	\end{itemize}
- 	\Put(1450,0){\hspace{1cm}{\LARGE{\textcolor{labriTopRed}{\textbf{How to locate the landmarks automatically}?}}}}
-  	\Put(1000,7){\includegraphics[scale=.38]{images/mlandmarksline}}
-    \Put(1200,7){\includegraphics[scale=.38]{images/mglandmarksline}}
-    ~\\[2.0cm]
-    
-    ~\\[2cm]
+ 	
+  	\Put(805,7){\includegraphics[scale=.4]{images/mlandmarksline}}
+    \Put(1125,7){\includegraphics[scale=.4]{images/mglandmarksline}}
+    \\[2.0cm]
+    \hspace{1cm}{\LARGE{\textcolor{labriTopRed}{\textbf{How to locate the landmarks automatically}?}}}
+    \\[2cm]
  \end{block}
 \end{column}
 
@@ -69,58 +86,49 @@
 \begin{columns}[t] 
 
 \begin{column}{\sepwidth}\end{column} % Empty spacer column
-\begin{column}{\threecolwidth}
-\begin{block}{Mandibles and manual landmarks}
-\begin{figure}[h]
-\centering
-\subfloat[Left mandible]{\label{figrbox2}\includegraphics[scale=0.29,valign=m]{./images/mg19_sp}}~~
-\subfloat[Right mandible]{\label{figrbox1}\includegraphics[scale=0.30,valign=m]{./images/md28_sp}}
-\caption{Example of beetle mandibles from the studied data set with
-  manual landmarks.}
-\label{fig1}
-\end{figure}
-\end{block}
-\end{column}
-\begin{column}{\sepwidth}\end{column} % Empty spacer column
-\begin{column}{\twothirdcolwidth}
+
+\begin{column}{\onecolwidth}
+%\begin{block}{La Fable \hspace{2cm} \small{(livre II, fable 21)}}
+%\end{block}
 \begin{block}{Proposed method}
 	\begin{columns}[t]
-		\begin{column}{\sepwidth}\end{column}
-		\begin{column}{\fourcolwidth}
+		\begin{column}{\threecolwidth}
+			
 			\begin{itemize}
 				\item \textbf{\underline{Input:}} 
 					
-					\begin{itemize}\normalsize{
-						\item A model image
-						\item The manual landmarks of model image
-						\item A scene image}
+					\begin{itemize}
+						\item Model image
+						\item Model manual landmarks
+						\item Scene image
 					\end{itemize}
 					
-					~\\[0.2cm]
+					~\\[0.5cm]
 				\item \textbf{\underline{Output:}} 
 					
-					\begin{itemize}\normalsize{
-						\item Landmarks of scene image}
+					\begin{itemize}
+						\item Landmarks of scene image
 					\end{itemize}		  				
 					
-					~\\[0.3cm]
+					~\\[0.5cm]
   				\item \textbf{\underline{Steps:}}
 									
-  					\begin{itemize}\normalsize{
+  					\begin{itemize}
   						\item Shape identification: segmentation and registration
-  						\item SIFT and landmarks: Extract the patches, \\calculate the SIFT descriptors and \\estimate the coordinates of landmarks on the scene image.}
+  						\item SIFT and landmarks
   					\end{itemize}
   					
-  					~\\[0.3cm]
+  					~\\[0.5cm]
 			\end{itemize}
+			
 		\end{column}
-		\begin{column}{\twocolwidth}
-		\begin{figure}
-				\includegraphics[scale=.70,left,valign=t]{images/method2}
-		\end{figure}
+		\begin{column}{\twothirdcolwidth}
+			\begin{figure}
+				\includegraphics[scale=.85]{images/method2}
+			\end{figure}
 		\end{column}
 	\end{columns}
-	~\\[0.1mm]
+	\vspace{0.2cm}
 \end{block}
 \end{column}
 
@@ -151,12 +159,10 @@
 \begin{column}{\twocolwidth}
 
 \begin{block}{Segmentation}
-	
-	\begin{enumerate}[\hspace{25pt}1.]
+	\begin{enumerate}
 		\item Converting the image to binary one by applying a threshold determined by histogram analysis \cite{leestimating},
 		\item Contours points are extracted by Canny algorithm \cite{canny1986computational}. The thresholds ratio in Canny: $T_{lower} = (1/3) \times T^{upper}$, in which $T^{lower}$ equals to the threshold value in step 1.
 	\end{enumerate}
-	
 \end{block}
 
 %\vspace{5pt}
@@ -169,7 +175,7 @@
 
 \begin{block}{Registration}
 Model and scene images are segmented to extract the contours points. The contours points are registered by applying \textbf{P}rincipal \textbf{C}omponent \textbf{A}nalysis \cite{jolliffe2002principal} \textbf{I}teration (PCAI).
- \begin{enumerate}[\hspace{30pt}1.]
+ \begin{enumerate}
     		\item Compute the centroid point and principal axis of each list of contour points,
     		\item Compute the \textbf{translation} and \textbf{rotation} values between two lists of contour points,
     		\item \textbf{Register} the two lists of contour points,
@@ -185,9 +191,9 @@ Model and scene images are segmented to extract the contours points. The contour
 \begin{block}{SIFT and landmarks}
 \begin{figure}
     	 \centering
-    	 \includegraphics[scale=2.53]{images/illustration}
+    	 \includegraphics[width=0.7\textwidth]{images/illustration}
     \end{figure}
-    \begin{enumerate}[\hspace{25pt}1.]
+    \begin{enumerate}
     		\item A \textbf{patch} $P_m$ is initialized at each manual landmark of model image (size of $9\times9$),
     		\item Calculating the SIFT\cite{lowe1999object} descriptor for $P_m$,
     		\item At the same position in the scene image, a patch $P_s$ is created (size of $36\times36$),
@@ -262,12 +268,9 @@ Model and scene images are segmented to extract the contours points. The contour
 
 \begin{column}{\onecolwidth}
 \begin{block}{References}
-	\hspace{2cm}
-	\begin{multicols}{2}
-		\setbeamertemplate{bibliography item}{\insertbiblabel}
-		\bibliographystyle{unsrt}
-		\bibliography{references}
-	\end{multicols}
+	%\bibliographystyle{plain}
+	%\bibliography{references}
+	\printbibliography
 \end{block}
 
 \end{column}

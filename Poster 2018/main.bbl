@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{leestimating}
+L~L{\^e}~V{\~a}nh, M~Beurton-Aimar, JP~Salmon, A~Marie, and N~Parisey.
+\newblock Estimating landmarks on 2d images of beetle mandibles.
+\newblock {\em WSCG}, 2016.
+
+\bibitem{canny1986computational}
+John Canny.
+\newblock A computational approach to edge detection.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, (6):679--698, 1986.
+
+\bibitem{jolliffe2002principal}
+Ian Jolliffe.
+\newblock {\em Principal component analysis}.
+\newblock Wiley Online Library, 2002.
+
+\bibitem{lowe1999object}
+David~G Lowe.
+\newblock Object recognition from local scale-invariant features.
+\newblock In {\em Computer vision, 1999. The proceedings of the seventh IEEE
+  international conference on}, volume~2, pages 1150--1157. Ieee, 1999.
+
+\end{thebibliography}
