@@ -148,12 +148,12 @@
  \begin{columns}[c]
      \begin{column}{\bottomcolwidth}
          \centering
-         \includegraphics[height=3cm]{logos/UBX-7.jpg}
+         \includegraphics[height=3.5cm]{logos/UBX-7.jpg}
      \end{column}
-     \begin{column}{\bottomcolwidth}
-         \centering
-         \includegraphics[height=3cm]{logos/logo_INPB.png}
-     \end{column}
+     %\begin{column}{\bottomcolwidth}
+     %    \centering
+     %    \includegraphics[height=3cm]{logos/logo_INPB.png}
+     %\end{column}
      \ifINRIA
      \begin{column}{\bottomcolwidth}
          \centering
@@ -162,7 +162,7 @@
      \fi
      \begin{column}{\bottomcolwidth}
          \centering
-         \includegraphics[height=3cm]{logos/logo_cnrs.png}
+         \includegraphics[height=3.5cm]{logos/logo_cnrs.png}
      \end{column}
  \end{columns}
  {}

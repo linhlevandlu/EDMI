@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.18)  23 FEB 2018 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.18)  26 FEB 2018 11:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1545,9 +1545,9 @@ Package caption Info: End \AtBeginDocument code.
 File: logos/UBX-7.jpg Graphic file (type jpg)
  <use logos/UBX-7.jpg>
 Package pdftex.def Info: logos/UBX-7.jpg used on input line 26.
-(pdftex.def)             Requested size: 212.7538pt x 85.35826pt.
+(pdftex.def)             Requested size: 248.2153pt x 99.58464pt.
 
-Overfull \hbox (111.34758pt too wide) in paragraph at lines 26--26
+Overfull \hbox (146.80908pt too wide) in paragraph at lines 26--26
  [][] 
  []
 
@@ -1558,17 +1558,7 @@ line 26.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<logos/logo_INPB.png, id=14, 513.92pt x 363.3575pt>
-File: logos/logo_INPB.png Graphic file (type png)
- <use logos/logo_INPB.png>
-Package pdftex.def Info: logos/logo_INPB.png used on input line 26.
-(pdftex.def)             Requested size: 120.72415pt x 85.35826pt.
-
-Overfull \hbox (19.31793pt too wide) in paragraph at lines 26--26
- [][] 
- []
-
-<logos/INRA_logo.jpg, id=16, 238.9728pt x 98.0463pt>
+<logos/INRA_logo.jpg, id=14, 238.9728pt x 98.0463pt>
 File: logos/INRA_logo.jpg Graphic file (type jpg)
  <use logos/INRA_logo.jpg>
 Package pdftex.def Info: logos/INRA_logo.jpg used on input line 26.
@@ -1578,15 +1568,15 @@ Overfull \hbox (106.65521pt too wide) in paragraph at lines 26--26
  [][] 
  []
 
-<logos/logo_cnrs.png, id=17, 711.65875pt x 711.65875pt>
+<logos/logo_cnrs.png, id=15, 711.65875pt x 711.65875pt>
 File: logos/logo_cnrs.png Graphic file (type png)
 
 <use logos/logo_cnrs.png>
 Package pdftex.def Info: logos/logo_cnrs.png used on input line 26.
-(pdftex.def)             Requested size: 85.35193pt x 85.35826pt.
+(pdftex.def)             Requested size: 99.57724pt x 99.58464pt.
 LaTeX Font Info:    Calculating math sizes for size <30.53> on input line 26.
 LaTeX Font Info:    Calculating math sizes for size <25.44> on input line 26.
- <logos/logo_EDMI.jpg, id=20, 1284.8pt x 814.04124pt>
+ <logos/logo_EDMI.jpg, id=18, 1284.8pt x 814.04124pt>
 File: logos/logo_EDMI.jpg Graphic file (type jpg)
 
 <use logos/logo_EDMI.jpg>
@@ -1605,14 +1595,14 @@ Overfull \hbox (4.0pt too wide) in paragraph at lines 281--281
  []
 
 LaTeX Font Info:    Calculating math sizes for size <12.27> on input line 281.
-<images/mlandmarksline.png, id=21, 602.25pt x 752.8125pt>
+<images/mlandmarksline.png, id=19, 602.25pt x 752.8125pt>
 File: images/mlandmarksline.png Graphic file (type png)
 
 <use images/mlandmarksline.png>
 Package pdftex.def Info: images/mlandmarksline.png used on input line 281.
 (pdftex.def)             Requested size: 228.85738pt x 286.07172pt.
 
-<images/mglandmarksline.png, id=22, 602.25pt x 752.8125pt>
+<images/mglandmarksline.png, id=21, 602.25pt x 752.8125pt>
 File: images/mglandmarksline.png Graphic file (type png)
 
 <use images/mglandmarksline.png>
@@ -1628,14 +1618,14 @@ Overfull \hbox (4.0pt too wide) in paragraph at lines 281--281
  [][]  
  []
 
-<./images/mg19_sp.jpg, id=23, 1090.82532pt x 1522.18687pt>
+<./images/mg19_sp.jpg, id=22, 1090.82532pt x 1522.18687pt>
 File: ./images/mg19_sp.jpg Graphic file (type jpg)
 
 <use ./images/mg19_sp.jpg>
 Package pdftex.def Info: ./images/mg19_sp.jpg used on input line 281.
 (pdftex.def)             Requested size: 316.33124pt x 441.4229pt.
 
-<./images/md28_sp.jpg, id=24, 1090.82532pt x 1522.18687pt>
+<./images/md28_sp.jpg, id=23, 1090.82532pt x 1522.18687pt>
 File: ./images/md28_sp.jpg Graphic file (type jpg)
 
 <use ./images/md28_sp.jpg>
@@ -1646,7 +1636,7 @@ Overfull \hbox (4.0pt too wide) in paragraph at lines 281--281
  [][]  
  []
 
-<images/method2.png, id=25, 1213.53375pt x 703.62875pt>
+<images/method2.png, id=24, 1213.53375pt x 703.62875pt>
 File: images/method2.png Graphic file (type png)
 
 <use images/method2.png>
@@ -1678,7 +1668,7 @@ Overfull \hbox (4.0pt too wide) in paragraph at lines 281--281
  [][]  
  []
 
-<images/extract.png, id=29, 1586.92876pt x 588.1975pt>
+<images/extract.png, id=28, 1586.92876pt x 588.1975pt>
 File: images/extract.png Graphic file (type png)
 
 <use images/extract.png>
@@ -1689,14 +1679,14 @@ Overfull \hbox (4.0pt too wide) in paragraph at lines 281--281
  [][]  
  []
 
-<images/md_chartlms.jpg, id=31, 892.33376pt x 545.03625pt>
+<images/md_chartlms.jpg, id=30, 892.33376pt x 545.03625pt>
 File: images/md_chartlms.jpg Graphic file (type jpg)
 
 <use images/md_chartlms.jpg>
 Package pdftex.def Info: images/md_chartlms.jpg used on input line 281.
 (pdftex.def)             Requested size: 669.6868pt x 409.05063pt.
 
-<images/md_rs.png, id=32, 150.5625pt x 225.84375pt>
+<images/md_rs.png, id=31, 150.5625pt x 225.84375pt>
 File: images/md_rs.png Graphic file (type png)
  <use images/md_rs.png>
 Package pdftex.def Info: images/md_rs.png used on input line 281.
@@ -1706,14 +1696,14 @@ Overfull \hbox (4.0pt too wide) in paragraph at lines 281--281
  [][]  
  []
 
-<images/mg_chartlms.jpg, id=33, 731.73375pt x 508.90125pt>
+<images/mg_chartlms.jpg, id=32, 731.73375pt x 508.90125pt>
 File: images/mg_chartlms.jpg Graphic file (type jpg)
 
 <use images/mg_chartlms.jpg>
 Package pdftex.def Info: images/mg_chartlms.jpg used on input line 281.
 (pdftex.def)             Requested size: 680.842pt x 473.52953pt.
 
-<images/mg_rs.png, id=34, 150.5625pt x 225.84375pt>
+<images/mg_rs.png, id=33, 150.5625pt x 225.84375pt>
 File: images/mg_rs.png Graphic file (type png)
  <use images/mg_rs.png>
 Package pdftex.def Info: images/mg_rs.png used on input line 281.
@@ -1756,18 +1746,9 @@ Overfull \hbox (1.13792pt too wide) has occurred while \output is active
 File: logos/UBX-7.jpg Graphic file (type jpg)
 <use logos/UBX-7.jpg>
 Package pdftex.def Info: logos/UBX-7.jpg used on input line 281.
-(pdftex.def)             Requested size: 212.7538pt x 85.35826pt.
+(pdftex.def)             Requested size: 248.2153pt x 99.58464pt.
 
-Overfull \hbox (111.34758pt too wide) has occurred while \output is active
- [][] 
- []
-
-File: logos/logo_INPB.png Graphic file (type png)
-<use logos/logo_INPB.png>
-Package pdftex.def Info: logos/logo_INPB.png used on input line 281.
-(pdftex.def)             Requested size: 120.72415pt x 85.35826pt.
-
-Overfull \hbox (19.31793pt too wide) has occurred while \output is active
+Overfull \hbox (146.80908pt too wide) has occurred while \output is active
  [][] 
  []
 
@@ -1783,7 +1764,7 @@ Overfull \hbox (106.65521pt too wide) has occurred while \output is active
 File: logos/logo_cnrs.png Graphic file (type png)
 <use logos/logo_cnrs.png>
 Package pdftex.def Info: logos/logo_cnrs.png used on input line 281.
-(pdftex.def)             Requested size: 85.35193pt x 85.35826pt.
+(pdftex.def)             Requested size: 99.57724pt x 99.58464pt.
 
 Overfull \hbox (1.13792pt too wide) has occurred while \output is active
 [] 
@@ -1794,8 +1775,8 @@ Overfull \hbox (1.13792pt too wide) has occurred while \output is active
  <./logos/logo_EDMI.jpg> <./images/mlandmarksline.png> <./images/mglandmarkslin
 e.png> <./images/mg19_sp.jpg> <./images/md28_sp.jpg> <./images/method2.png> <./
 images/extract.png> <./images/md_chartlms.jpg> <./images/md_rs.png> <./images/m
-g_chartlms.jpg> <./images/mg_rs.png> <./logos/UBX-7.jpg> <./logos/logo_INPB.png
-> <./logos/INRA_logo.jpg> <./logos/logo_cnrs.png (PNG copy)>]
+g_chartlms.jpg> <./images/mg_rs.png> <./logos/UBX-7.jpg> <./logos/INRA_logo.jpg
+> <./logos/logo_cnrs.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1815,10 +1796,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
  ) 
 Here is how much of TeX's memory you used:
- 22880 strings out of 493029
- 439461 string characters out of 6136234
- 635258 words of memory out of 5000000
- 25839 multiletter control sequences out of 15000+600000
+ 22876 strings out of 493029
+ 439376 string characters out of 6136234
+ 635352 words of memory out of 5000000
+ 25836 multiletter control sequences out of 15000+600000
  37509 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,23n,102p,504b,1651s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1830,10 +1811,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (1 page, 1654314 bytes).
+Output written on main.pdf (1 page, 1618707 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 92 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
  10 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

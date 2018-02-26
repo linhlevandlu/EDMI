@@ -14,11 +14,11 @@
 \title{SIFT descriptor to set landmarks on biological images}
 %\subtitle{La fable ``Le Faucon et le Chapon''}
 
-\author{Van Linh LE$^{1}$, Marie BEURTON-AIMAR$^{1}$, Adrien KRAHENBUHL$^{1}$, Nicolas PARISEY$^{2}$}
+\author{Van Linh LE$^{1}$, Marie BEURTON-AIMAR$^{1}$, Adrien KRAHENBUHL$^{2}$, Nicolas PARISEY$^{3}$}
 % Vous êtes probablement seul auteur de votre poster.
 % Pour les coauteurs des résultats, il vaut mieux les citer avec les résultats.
 
-\institute{$^{1}$LaBRI - UMR 5800, Univ. Bordeaux; $^{2}$INRA - IGEPP UMR 1349}
+\institute{$^{1}$LaBRI - UMR 5800, Univ. Bordeaux; $^{2}$ICube - UMR 7357, Univ. Strasbourg; $^{3}$INRA - IGEPP UMR 1349}
 % indiquer son équipe.
 
 \def\Put(#1,#2)#3{\leavevmode\makebox(0,0){\put(#1,#2){#3}}}
@@ -154,7 +154,7 @@
 \begin{block}{Segmentation}
 	
 	\begin{enumerate}[\hspace{25pt}1.]
-		\item Converting the image to binary one by applying a threshold determined by histogram analysis \cite{leestimating},
+		\item Converting the image to binary one by applying a threshold determined by histogram analysis \cite{beurton2017maelab},
 		\item Contours points are extracted by Canny algorithm \cite{canny1986computational}. The thresholds ratio in Canny: $T_{lower} = (1/3) \times T^{upper}$,\\ in which $T^{lower}$ equals to the threshold value in step 1.
 	\end{enumerate}
 	

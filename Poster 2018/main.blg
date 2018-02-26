@@ -6,37 +6,37 @@ Database file #1: references.bib
 Warning--there's a number but no volume in canny1986computational
 You've used 4 entries,
             1791 wiz_defined-function locations,
-            470 strings with 4097 characters,
-and the built_in function-call counts, 979 in all, are:
+            470 strings with 4108 characters,
+and the built_in function-call counts, 997 in all, are:
 = -- 93
-> -- 29
+> -- 26
 < -- 2
-+ -- 12
-- -- 8
-* -- 56
-:= -- 149
++ -- 11
+- -- 7
+* -- 54
+:= -- 146
 add.period$ -- 13
 call.type$ -- 4
 change.case$ -- 3
 chr.to.int$ -- 0
 cite$ -- 5
-duplicate$ -- 50
-empty$ -- 99
-format.name$ -- 8
-if$ -- 225
+duplicate$ -- 54
+empty$ -- 110
+format.name$ -- 7
+if$ -- 234
 int.to.chr$ -- 0
 int.to.str$ -- 4
 missing$ -- 5
 newline$ -- 23
 num.names$ -- 4
-pop$ -- 17
+pop$ -- 21
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
 skip$ -- 24
 stack$ -- 0
 substring$ -- 65
-swap$ -- 17
+swap$ -- 18
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0

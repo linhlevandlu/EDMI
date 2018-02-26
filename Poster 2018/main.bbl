@@ -1,9 +1,9 @@
 \begin{thebibliography}{1}
 
-\bibitem{leestimating}
-L~L{\^e}~V{\~a}nh, M~Beurton-Aimar, JP~Salmon, A~Marie, and N~Parisey.
-\newblock Estimating landmarks on 2d images of beetle mandibles.
-\newblock {\em WSCG}, 2016.
+\bibitem{beurton2017maelab}
+Marie Beurton-Aimar, Adrien Kr{\"a}henb{\"u}hl, Nicolas Parisey, et~al.
+\newblock Maelab: a framework to automatize landmark estimation.
+\newblock In {\em WSCG 2017}, 2017.
 
 \bibitem{canny1986computational}
 John Canny.
