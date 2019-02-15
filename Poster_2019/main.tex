@@ -49,7 +49,7 @@
             \begin{block}{Elementary block}
             	\begin{columns}
             		\begin{column}{.54\textwidth}
-            			An elementary block is consists of:
+            			An elementary block (EB) is consists of:
             			\begin{itemize}
             				\item A Convolutional layer
             				\item A Max-Pooling layer
@@ -86,36 +86,68 @@
         \begin{minipage}[T]{.95\textwidth}
           \parbox[t][\columnheight]{\textwidth}{
             
-            \begin{block}{Training curves}
-            
-            \centering
-            
-            \includegraphics[width=.925\textwidth]{sample/BP.pdf}
-            
+            \begin{block}{Predicted landmarks on images}
+            	\begin{itemize}
+            		\item \textbf{\textcolor{yellow}{Yellow}} points are manual landmarks
+            		\item \textbf{\textcolor{red}{Red}} points are predicted landmarks
+            	\end{itemize}
+            	\begin{columns}
+            		\begin{column}{.45\textwidth}
+            			\centering
+            			\includegraphics[width=.97\textwidth]{images/Prono_115.eps}
+            		\end{column}
+            		\begin{column}{.45\textwidth}
+            			\centering
+            			\includegraphics[width=.97\textwidth]{images/Prono_036.eps}
+            		\end{column}
+            	\end{columns}
             \end{block}
             
             \vfill
             
             \begin{block}{Evaluation progresses}
+            On \textbf{quality metrics} for regression problems. \\[0.2cm]
+            \begin{center}
+           		\begin{tabular}{|l|c|c|c|}
+            		\hline
+            		Metric\footnotemark[1] & $r^2$ & EV & Pearson \\ \hline
+            		Cintas et al. & 0.884 & 0.951 & 0.976 \\ \hline
+            		Our model & \textbf{0.9952} & \textbf{0.9951} & \textbf{0.9974} \\ \hline
+            	\end{tabular}            
+            	
+            \end{center}
             
-            \centering
-            
-            \includegraphics[width=.8\textwidth]{sample/PS-tech.png}
+            ~\\[0.5cm]
+            On \textbf{average distances} by landmarks
+            \begin{center}
+           		\begin{tabular}{|c|c|}
+            		\hline
+            		$\#$Landmark & Distance (in pixels)\\ \hline
+            		\textbf{\textcolor{blue}{1}} & \textbf{\textcolor{blue}{4.002}} \\ \hline
+            		2 & 4.483 \\ \hline
+            		3 & 4.296 \\ \hline
+            		4 & 4.387 \\ \hline
+            		5 & 4.293 \\ \hline
+            		\textbf{\textcolor{red}{6}} & \textbf{\textcolor{red}{5.363}} \\ \hline
+            		7 & 4.636 \\ \hline
+            		8 & 4.936 \\ \hline
+            	\end{tabular}            
+            \end{center}~\\[0.5cm]
+            The proportion of acceptable predicted landmarks
+            \includegraphics[width=.8\textwidth]{images/chart.png}
             
             \end{block}
             
             \vfill
             
             \begin{block}{Conclusion}
-            
-            \centering
-            
-            Experiment: Four clients joining the system sequentially
-            
-            \includegraphics[width=.925\textwidth]{sample/startup.pdf}
-            
-            Startup delay (s) - MS-Stream (top) vs \pname (bottom)
-            
+				\begin{enumerate}
+					\item A CNN has been proposed to predict the landmarks on pronotum images which are difficult to apply image processing techniques.
+					\item A new method has been applied to augment dataset.
+					\item The quality of predicted landmarks have been evaluated by average distances.
+					\item Predicted landmarks have been accepted with an accuracy greater than $80\%$.
+					\item The predicted landmarks can be used to replace manual landmarks.
+				\end{enumerate}				            
             \end{block}
             
             \vfill
