@@ -7,11 +7,17 @@
 \def\pdate{Thursday April 4, 2019} % Date
 \inriatrue % inriatrue/inriafalse to enable/disable Inria logo
 
+
 \input{boilerplateSDSLaBRI}
 
 \graphicspath{{./fig/}} % Figures and logos directory
 \setlength{\columnheight}{588ex} % Tweak this value if columns are too long/short (should be okay with 588ex)
 \newcommand{\pname}{\textsc{Priva-Stream}\xspace} % For demonstration purpose only
+\usepackage{tabu} 
+\usepackage{xcolor}
+
+\setlength{\arrayrulewidth}{1mm}
+\renewcommand{\arraystretch}{1.2}
 
 \begin{document}
 \begin{frame}
@@ -20,35 +26,50 @@
       \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
         \begin{minipage}[T]{.95\textwidth}
           \parbox[t][\columnheight]{\textwidth}{
+            \begin{block}{Context}
+            	\begin{itemize}
+            		\item \textbf{Deep learning}\cite{lecun2015deep}: methods to learn the representations of data 
+            		\item Key points (\textbf{landmarks}): the points on the image that are invariant when the image changes
+             		\item \textit{Key points detection}: to find the key points through images (video)
+             		\item Landmarks in biology: most often provided manually by biologists
+            	\end{itemize}
+            \end{block}
             
-            \begin{block}{Pronotum and landmarks}
+            \vfill
             
+            \begin{block}{Beetle's pronotum and landmarks}
+            \begin{itemize}
+            	\item Pronotum: an external morphology part of beetle
+            	\item Eight-manual landmarks: provided by biologists and used as ground truth.
+            \end{itemize}
             \centering
             
-            \includegraphics[width=.45\textwidth]{images/pronotum.JPG}~~
-            \includegraphics[width=.45\textwidth]{images/pronotum.png}            \\[0.2cm]
+            \includegraphics[width=.43\textwidth]{images/pronotum.JPG}~~
+            \includegraphics[width=.43\textwidth]{images/pronotum.png}            \\[0.2cm]
             \textbf{\textcolor{red}{How to locate the landmarks automatically?}}
             \end{block}
             
             \vfill
             
             \begin{block}{Dataset augmentation}
-            	\begin{enumerate}
-            		\item Changing the value of one color channel in the original image
-            		\item Separating the channels of original image
-            		\item In total: $293 \times 7 = 2051$ images 
-            	\end{enumerate}
+            	\begin{itemize}
+            		\item[] The augmentation includes two procedures:
+            			\begin{enumerate}
+            				\item Changing the value of one color channel in the original image
+            				\item Separating the channels of original image	
+			           	\end{enumerate}
+					\item[] In total: $293 \times 7 = \textbf{2051}$ images 
+            	\end{itemize}
             \centering
             
-            \includegraphics[width=.7\textwidth]{images/data_aug.png}
-            
+            \includegraphics[width=.6\textwidth]{images/data_aug.png}
             \end{block}
             
             \vfill
             
             \begin{block}{Elementary block}
             	\begin{columns}
-            		\begin{column}{.54\textwidth}
+            		\begin{column}{.45\textwidth}
             			An elementary block (EB) is consists of:
             			\begin{itemize}
             				\item A Convolutional layer
@@ -56,16 +77,16 @@
             				\item A Dropout layer
             			\end{itemize}
             		\end{column}
-            		\begin{column}{.45\textwidth}
+            		\begin{column}{.54\textwidth}
             			\centering
-            			\includegraphics[width=.97\textwidth]{images/elementary_block.png}
+            			\includegraphics[width=.85\textwidth]{images/elementary_block.png}
             		\end{column}
             	\end{columns}
             \end{block}
             
             \vfill
             
-            \begin{block}{Network architecture}
+            \begin{block}{EB-Net architecture}
             	\begin{center}
             		\includegraphics[width=.96\textwidth]{images/net3.png}\\
             	\end{center}
@@ -94,11 +115,11 @@
             	\begin{columns}
             		\begin{column}{.45\textwidth}
             			\centering
-            			\includegraphics[width=.97\textwidth]{images/Prono_115.eps}
+            			\includegraphics[width=.95\textwidth]{images/Prono_115.eps}
             		\end{column}
             		\begin{column}{.45\textwidth}
             			\centering
-            			\includegraphics[width=.97\textwidth]{images/Prono_036.eps}
+            			\includegraphics[width=.95\textwidth]{images/Prono_036.eps}
             		\end{column}
             	\end{columns}
             \end{block}
@@ -107,35 +128,35 @@
             
             \begin{block}{Evaluation progresses}
             On \textbf{quality metrics} for regression problems. \\[0.2cm]
-            \begin{center}
-           		\begin{tabular}{|l|c|c|c|}
+            \begin{center}            	
+           		\begin{tabu} to 0.9\textwidth {| X[l] | X[c] | X[c] | X[c] |}
             		\hline
             		Metric\footnotemark[1] & $r^2$ & EV & Pearson \\ \hline
-            		Cintas et al. & 0.884 & 0.951 & 0.976 \\ \hline
-            		Our model & \textbf{0.9952} & \textbf{0.9951} & \textbf{0.9974} \\ \hline
-            	\end{tabular}            
+            		Cintas et al.\cite{cintas2016automatic} & 0.884 & 0.951 & 0.976 \\ \hline                 		    		\rowcolor{green!80!yellow!50} Our model & \textbf{0.9952} & \textbf{0.9951} & \textbf{0.9974} \\ \hline
+            	\end{tabu}            
             	
             \end{center}
             
             ~\\[0.5cm]
             On \textbf{average distances} by landmarks
             \begin{center}
-           		\begin{tabular}{|c|c|}
+           		\begin{tabu} to 0.6\textwidth{| X[c] | X[c] |}
             		\hline
-            		$\#$Landmark & Distance (in pixels)\\ \hline
-            		\textbf{\textcolor{blue}{1}} & \textbf{\textcolor{blue}{4.002}} \\ \hline
+            		\textbf{Landmark} & \textbf{Distance} (in pixels)\\ \hline
+            		\rowcolor{red!80!yellow!50} \textbf{\textcolor{blue}{1}} & \textbf{\textcolor{blue}{4.002}} \\ \hline
             		2 & 4.483 \\ \hline
             		3 & 4.296 \\ \hline
             		4 & 4.387 \\ \hline
             		5 & 4.293 \\ \hline
-            		\textbf{\textcolor{red}{6}} & \textbf{\textcolor{red}{5.363}} \\ \hline
+            		\rowcolor{green!80!yellow!50} \textbf{\textcolor{red}{6}} & \textbf{\textcolor{red}{5.363}} \\ \hline
             		7 & 4.636 \\ \hline
             		8 & 4.936 \\ \hline
-            	\end{tabular}            
+            	\end{tabu}            
             \end{center}~\\[0.5cm]
             The proportion of acceptable predicted landmarks
-            \includegraphics[width=.8\textwidth]{images/chart.png}
-            
+            \begin{center}            
+	            \includegraphics[width=.85\textwidth]{images/chart2.png}
+            \end{center}        
             \end{block}
             
             \vfill
@@ -144,8 +165,7 @@
 				\begin{enumerate}
 					\item A CNN has been proposed to predict the landmarks on pronotum images which are difficult to apply image processing techniques.
 					\item A new method has been applied to augment dataset.
-					\item The quality of predicted landmarks have been evaluated by average distances.
-					\item Predicted landmarks have been accepted with an accuracy greater than $80\%$.
+					\item The quality of predicted landmarks have been evaluated by average distances with an accuracy greater than $80\%$.
 					\item The predicted landmarks can be used to replace manual landmarks.
 				\end{enumerate}				            
             \end{block}
@@ -153,26 +173,12 @@
             \vfill
             
             \begin{block}{Bibliography}
-            
-            \begin{itemize}
-            
-            \item Reliability, QoE and scalability
-            
-            MS-Stream: Multiple-Source adaptive streaming over HTTP
-            
-            \item Incentive to contribute
-            
-            Rewarding: contributing users get a higher quality
-            
-            \item End-users privacy
-            
-            TEE (SGX): encryption, NAT and anonymity
-            
-            \end{itemize}
-            
+            	\footnotesize{
+            	\bibliographystyle{unsrt}
+				\bibliography{references}
+				}
             \end{block}
-                        
-            
+             
           }
         \end{minipage}
       \end{beamercolorbox}
@@ -181,25 +187,3 @@
   \vskip1ex
 \end{frame}
 \end{document}
-
-\vfill
-            
-            \begin{block}{MS-Stream: Multi-Source Streaming over HTTP}
-            
-            \centering
-            
-            \includegraphics[width=.925\textwidth]{sample/msstream_archi.pdf}
-            
-            \includegraphics[width=.925\textwidth]{sample/chunk2.pdf}
-            
-            \end{block}
-            
-            \vfill
-            
-            \begin{block}{Problem statement}
-            
-            \centering
-            
-            \includegraphics[width=.5\textwidth]{sample/SotA-cropped.pdf}
-            
-            \end{block}
