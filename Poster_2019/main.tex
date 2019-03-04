@@ -2,7 +2,7 @@
 \def\ptitle{EB-Net for landmarking on pronotum images} % Title
 \def\pauthor{Le Van Linh} % Author
 \def\padvisors{Beurton-Aimar Marie, Zemmari Akka, Parisey Nicolas} % Advisors
-\def\pteam{I\&S} % Team
+\def\pteam{I\&S Team} % Team
 \def\pinstitute{Univ. Bordeaux, LaBRI, France} % Affiliation
 \def\pdate{Thursday April 4, 2019} % Date
 \inriatrue % inriatrue/inriafalse to enable/disable Inria logo
@@ -14,10 +14,11 @@
 \setlength{\columnheight}{588ex} % Tweak this value if columns are too long/short (should be okay with 588ex)
 \newcommand{\pname}{\textsc{Priva-Stream}\xspace} % For demonstration purpose only
 \usepackage{tabu} 
-\usepackage{xcolor}
-
+\usepackage{xcolor}    
+      
 \setlength{\arrayrulewidth}{1mm}
 \renewcommand{\arraystretch}{1.2}
+\definecolor{myyellow}{RGB}{255, 191, 0}
 
 \begin{document}
 \begin{frame}
@@ -28,10 +29,10 @@
           \parbox[t][\columnheight]{\textwidth}{
             \begin{block}{Context}
             	\begin{itemize}
-            		\item \textbf{Deep learning}\cite{lecun2015deep}: methods to learn the representations of data 
-            		\item Key points (\textbf{landmarks}): the points on the image that are invariant when the image changes
-             		\item \textit{Key points detection}: to find the key points through images (video)
-             		\item Landmarks in biology: most often provided manually by biologists
+            		\item \textbf{Deep learning}\cite{lecun2015deep}: methods to learn the representations of data.
+            		\item \textbf{Landmarks} (key points): the points on the image that are invariant when the image changes.
+             		\item \textit{Key points detection}: to find the key points through images.
+             		\item Landmarks in biology: most often provided manually by biologists.
             	\end{itemize}
             \end{block}
             
@@ -86,7 +87,7 @@
             
             \vfill
             
-            \begin{block}{EB-Net architecture}
+            \begin{block}{New model: EB-Net}
             	\begin{center}
             		\includegraphics[width=.96\textwidth]{images/net3.png}\\
             	\end{center}
@@ -109,7 +110,7 @@
             
             \begin{block}{Predicted landmarks on images}
             	\begin{itemize}
-            		\item \textbf{\textcolor{yellow}{Yellow}} points are manual landmarks
+            		\item \textbf{\textcolor{myyellow}{Yellow}} points are manual landmarks
             		\item \textbf{\textcolor{red}{Red}} points are predicted landmarks
             	\end{itemize}
             	\begin{columns}
@@ -126,7 +127,7 @@
             
             \vfill
             
-            \begin{block}{Evaluation progresses}
+            \begin{block}{Evaluation}
             On \textbf{quality metrics} for regression problems. \\[0.2cm]
             \begin{center}            	
            		\begin{tabu} to 0.9\textwidth {| X[l] | X[c] | X[c] | X[c] |}
@@ -138,7 +139,7 @@
             \end{center}
             
             ~\\[0.5cm]
-            On \textbf{average distances} by landmarks
+            On \textbf{average distances} between landmarks (manual \& predicted)
             \begin{center}
            		\begin{tabu} to 0.6\textwidth{| X[c] | X[c] |}
             		\hline
@@ -163,8 +164,8 @@
             
             \begin{block}{Conclusion}
 				\begin{enumerate}
-					\item A CNN has been proposed to predict the landmarks on pronotum images which are difficult to apply image processing techniques.
-					\item A new method has been applied to augment dataset.
+					\item A CNN model has been proposed to predict the landmarks on pronotum images.
+					\item An original method has been applied to augment dataset.
 					\item The quality of predicted landmarks have been evaluated by average distances with an accuracy greater than $80\%$.
 					\item The predicted landmarks can be used to replace manual landmarks.
 				\end{enumerate}				            
@@ -174,8 +175,10 @@
             
             \begin{block}{Bibliography}
             	\footnotesize{
+            	\setbeamertemplate{bibliography item}{\insertbiblabel}
             	\bibliographystyle{unsrt}
 				\bibliography{references}
+				
 				}
             \end{block}
              

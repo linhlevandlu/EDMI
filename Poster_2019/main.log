@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.18)  1 MAR 2019 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.18)  4 MAR 2019 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1422,36 +1422,36 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Try loading font information for OT1+Roboto-LF on input lin
-e 22.
+e 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/roboto/OT1Roboto-LF.fd
 File: OT1Roboto-LF.fd 2015/09/15 (autoinst) Font definitions for OT1/Roboto-LF.
 
 )
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
-(Font)              scaled to size 34.83pt on input line 22.
+(Font)              scaled to size 34.83pt on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1517,7 +1517,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1527,61 +1527,61 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count184
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 22.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 22.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 23.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 22.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/Roboto-LF/bx/n on input line 22.
+(Font)                  OT1/cmr/bx/n --> OT1/Roboto-LF/bx/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/Roboto-LF/bx/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 22.
+(Font)                  OT1/cmr/bx/n --> OT1/Roboto-LF/bx/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/Roboto-LF/m/n on input line 22.
+(Font)                  OT1/cmss/m/n --> OT1/Roboto-LF/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/Roboto-LF/m/n on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 22.
+(Font)                  OT1/cmss/bx/n --> OT1/Roboto-LF/m/n on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/Roboto-LF/m/it on input line 22.
+(Font)                  OT1/cmr/m/it --> OT1/Roboto-LF/m/it on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/Roboto-LF/m/it on input line 22.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 22.
+(Font)                  OT1/cmr/bx/it --> OT1/Roboto-LF/m/it on input line 23.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 22.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 22.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 23.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  OT1/Roboto-LF/m/n --> OT1/Roboto-LF/bx/n on input line 
-22.
+23.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/Roboto-LF/m/it --> OT1/Roboto-LF/bx/it on input lin
-e 22.
+e 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 22.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  OT1/Roboto-LF/bx/n --> OT1/Roboto-LF/bx/n on input line
- 22.
+ 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/Roboto-LF/m/n --> OT1/Roboto-LF/bx/n on input line 
-22.
+23.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/Roboto-LF/m/it --> OT1/Roboto-LF/bx/it on input lin
-e 22.
+e 23.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 22.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1607,114 +1607,114 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 22.
+LaTeX Info: Redefining \includegraphics on input line 23.
 \c@mv@tabular=\count185
 \c@mv@boldtabular=\count186
  (./main.nav)
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
-(Font)              scaled to size 16.8pt on input line 22.
+(Font)              scaled to size 16.8pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
-(Font)              scaled to size 41.8pt on input line 22.
+(Font)              scaled to size 41.8pt on input line 23.
 
 <./fig/logo/logo_UB.jpg, id=12, 835.12pt x 264.99pt>
 File: ./fig/logo/logo_UB.jpg Graphic file (type jpg)
 
 <use ./fig/logo/logo_UB.jpg>
-Package pdftex.def Info: ./fig/logo/logo_UB.jpg used on input line 22.
+Package pdftex.def Info: ./fig/logo/logo_UB.jpg used on input line 23.
 (pdftex.def)             Requested size: 451.87556pt x 143.38354pt.
 
 <./fig/logo/logo_CNRS.jpg, id=13, 851.18pt x 851.18pt>
 File: ./fig/logo/logo_CNRS.jpg Graphic file (type jpg)
 
 <use ./fig/logo/logo_CNRS.jpg>
-Package pdftex.def Info: ./fig/logo/logo_CNRS.jpg used on input line 22.
+Package pdftex.def Info: ./fig/logo/logo_CNRS.jpg used on input line 23.
 (pdftex.def)             Requested size: 143.3739pt x 143.38354pt.
 
 <./fig/logo/logo_INP.png, id=14, 452.69125pt x 319.1925pt>
 File: ./fig/logo/logo_INP.png Graphic file (type png)
 
 <use ./fig/logo/logo_INP.png>
-Package pdftex.def Info: ./fig/logo/logo_INP.png used on input line 22.
+Package pdftex.def Info: ./fig/logo/logo_INP.png used on input line 23.
 (pdftex.def)             Requested size: 203.34999pt x 143.38354pt.
 
 <./fig/logo/INRA_logo.jpg, id=16, 287.1528pt x 111.7776pt>
 File: ./fig/logo/INRA_logo.jpg Graphic file (type jpg)
 
 <use ./fig/logo/INRA_logo.jpg>
-Package pdftex.def Info: ./fig/logo/INRA_logo.jpg used on input line 22.
+Package pdftex.def Info: ./fig/logo/INRA_logo.jpg used on input line 23.
 (pdftex.def)             Requested size: 368.38243pt x 143.38354pt.
 
 <./fig/logo/logo_EDMI.png, id=17, 1085.05376pt x 209.78375pt>
 File: ./fig/logo/logo_EDMI.png Graphic file (type png)
 
 <use ./fig/logo/logo_EDMI.png>
-Package pdftex.def Info: ./fig/logo/logo_EDMI.png used on input line 22.
+Package pdftex.def Info: ./fig/logo/logo_EDMI.png used on input line 23.
 (pdftex.def)             Requested size: 741.61824pt x 143.38354pt.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/b/n' will be
-(Font)              scaled to size 16.8pt on input line 22.
+(Font)              scaled to size 16.8pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/b/n' will be
-(Font)              scaled to size 60.2pt on input line 22.
+(Font)              scaled to size 60.2pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/b/n' will be
-(Font)              scaled to size 72.24pt on input line 22.
+(Font)              scaled to size 72.24pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/it' will be
-(Font)              scaled to size 16.8pt on input line 22.
+(Font)              scaled to size 16.8pt on input line 23.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/it' will be
-(Font)              scaled to size 41.8pt on input line 22.
+(Font)              scaled to size 41.8pt on input line 23.
 
 <./fig/logo/logo_LaBRI.png, id=18, 1630.09pt x 519.9425pt>
 File: ./fig/logo/logo_LaBRI.png Graphic file (type png)
 
 <use ./fig/logo/logo_LaBRI.png>
-Package pdftex.def Info: ./fig/logo/logo_LaBRI.png used on input line 22.
+Package pdftex.def Info: ./fig/logo/logo_LaBRI.png used on input line 23.
 (pdftex.def)             Requested size: 525.5595pt x 167.63058pt.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/b/n' will be
-(Font)              scaled to size 34.83pt on input line 188.
-LaTeX Font Info:    Calculating math sizes for size <34.83> on input line 188.
+(Font)              scaled to size 34.83pt on input line 191.
+LaTeX Font Info:    Calculating math sizes for size <34.83> on input line 191.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
-(Font)              scaled to size 24.38089pt on input line 188.
+(Font)              scaled to size 24.38089pt on input line 191.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
-(Font)              scaled to size 17.415pt on input line 188.
+(Font)              scaled to size 17.415pt on input line 191.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/it' will be
-(Font)              scaled to size 34.83pt on input line 188.
+(Font)              scaled to size 34.83pt on input line 191.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/it' will be
-(Font)              scaled to size 24.38089pt on input line 188.
+(Font)              scaled to size 24.38089pt on input line 191.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/it' will be
-(Font)              scaled to size 17.415pt on input line 188.
+(Font)              scaled to size 17.415pt on input line 191.
 
 <images/pronotum.JPG, id=20, 457.71pt x 343.2825pt>
 File: images/pronotum.JPG Graphic file (type jpg)
  <use images/pronotum.JPG>
-Package pdftex.def Info: images/pronotum.JPG used on input line 188.
+Package pdftex.def Info: images/pronotum.JPG used on input line 191.
 (pdftex.def)             Requested size: 466.77817pt x 350.09636pt.
 
 <images/pronotum.png, id=21, 1108.14pt x 858.20625pt>
 File: images/pronotum.png Graphic file (type png)
 
 <use images/pronotum.png>
-Package pdftex.def Info: images/pronotum.png used on input line 188.
+Package pdftex.def Info: images/pronotum.png used on input line 191.
 (pdftex.def)             Requested size: 466.77817pt x 361.49178pt.
 
 <images/data_aug.png, id=22, 122.6181pt x 122.6181pt>
 File: images/data_aug.png Graphic file (type png)
 
 <use images/data_aug.png>
-Package pdftex.def Info: images/data_aug.png used on input line 188.
+Package pdftex.def Info: images/data_aug.png used on input line 191.
 (pdftex.def)             Requested size: 651.33609pt x 651.62961pt.
 
 <images/elementary_block.png, id=23, 614.295pt x 325.215pt>
 File: images/elementary_block.png Graphic file (type png)
 
 <use images/elementary_block.png>
-Package pdftex.def Info: images/elementary_block.png used on input line 188.
+Package pdftex.def Info: images/elementary_block.png used on input line 191.
 (pdftex.def)             Requested size: 498.2644pt x 263.78992pt.
 
 <images/net3.png, id=24, 1214.5375pt x 209.78375pt>
 File: images/net3.png Graphic file (type png)
  <use images/net3.png>
-Package pdftex.def Info: images/net3.png used on input line 188.
+Package pdftex.def Info: images/net3.png used on input line 191.
 (pdftex.def)             Requested size: 1042.13443pt x 180.00716pt.
 
-Overfull \hbox (27.60104pt too wide) in paragraph at lines 188--188
+Overfull \hbox (27.60104pt too wide) in paragraph at lines 191--191
 [][] 
  []
 
@@ -1726,14 +1726,14 @@ Package epstopdf Info: Source file: <images/Prono_115.eps>
 (epstopdf)                    size: 24852 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Prono_115-eps-conve
 rted-to.pdf images/Prono_115.eps>
-(epstopdf)             \includegraphics on input line 188.
+(epstopdf)             \includegraphics on input line 191.
 Package epstopdf Info: Output file is already uptodate.
 <images/Prono_115-eps-converted-to.pdf, id=25, 103.38625pt x 77.28876pt>
 File: images/Prono_115-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Prono_115-eps-converted-to.pdf>
 Package pdftex.def Info: images/Prono_115-eps-converted-to.pdf used on input li
-ne 188.
+ne 191.
 (pdftex.def)             Requested size: 464.0676pt x 346.96118pt.
 Package epstopdf Info: Source file: <images/Prono_036.eps>
 (epstopdf)                    date: 2019-02-15 09:59:35
@@ -1743,7 +1743,7 @@ Package epstopdf Info: Source file: <images/Prono_036.eps>
 (epstopdf)                    size: 23843 bytes
 (epstopdf)             Command: <repstopdf --outfile=images/Prono_036-eps-conve
 rted-to.pdf images/Prono_036.eps>
-(epstopdf)             \includegraphics on input line 188.
+(epstopdf)             \includegraphics on input line 191.
 Package epstopdf Info: Output file is already uptodate.
 
 <images/Prono_036-eps-converted-to.pdf, id=26, 103.38625pt x 77.28876pt>
@@ -1751,62 +1751,61 @@ File: images/Prono_036-eps-converted-to.pdf Graphic file (type pdf)
 
 <use images/Prono_036-eps-converted-to.pdf>
 Package pdftex.def Info: images/Prono_036-eps-converted-to.pdf used on input li
-ne 188.
+ne 191.
 (pdftex.def)             Requested size: 464.0676pt x 346.96118pt.
 
 <images/chart2.png, id=30, 552.56438pt x 301.125pt>
 File: images/chart2.png Graphic file (type png)
  <use images/chart2.png>
-Package pdftex.def Info: images/chart2.png used on input line 188.
+Package pdftex.def Info: images/chart2.png used on input line 191.
 (pdftex.def)             Requested size: 922.72337pt x 502.84477pt.
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
-(Font)              scaled to size 24.19pt on input line 188.
+(Font)              scaled to size 24.19pt on input line 191.
 
 (./main.bbl
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/it' will be
 (Font)              scaled to size 24.19pt on input line 6.
 )
-Overfull \hbox (27.60104pt too wide) in paragraph at lines 188--188
+Overfull \hbox (27.60104pt too wide) in paragraph at lines 191--191
 [][] 
  []
 
 LaTeX Font Info:    Font shape `OT1/Roboto-LF/m/n' will be
-(Font)              scaled to size 4.0pt on input line 188.
+(Font)              scaled to size 4.0pt on input line 191.
 File: ./fig/logo/logo_LaBRI.png Graphic file (type png)
 <use ./fig/logo/logo_LaBRI.png>
-Package pdftex.def Info: ./fig/logo/logo_LaBRI.png used on input line 188.
+Package pdftex.def Info: ./fig/logo/logo_LaBRI.png used on input line 191.
 (pdftex.def)             Requested size: 525.5595pt x 167.63058pt.
 File: ./fig/logo/logo_UB.jpg Graphic file (type jpg)
  <use ./fig/logo/logo_UB.jpg>
-Package pdftex.def Info: ./fig/logo/logo_UB.jpg used on input line 188.
+Package pdftex.def Info: ./fig/logo/logo_UB.jpg used on input line 191.
 (pdftex.def)             Requested size: 451.87556pt x 143.38354pt.
 File: ./fig/logo/logo_CNRS.jpg Graphic file (type jpg)
 
 <use ./fig/logo/logo_CNRS.jpg>
-Package pdftex.def Info: ./fig/logo/logo_CNRS.jpg used on input line 188.
+Package pdftex.def Info: ./fig/logo/logo_CNRS.jpg used on input line 191.
 (pdftex.def)             Requested size: 143.3739pt x 143.38354pt.
 File: ./fig/logo/logo_INP.png Graphic file (type png)
  <use ./fig/logo/logo_INP.png>
-Package pdftex.def Info: ./fig/logo/logo_INP.png used on input line 188.
+Package pdftex.def Info: ./fig/logo/logo_INP.png used on input line 191.
 (pdftex.def)             Requested size: 203.34999pt x 143.38354pt.
 File: ./fig/logo/INRA_logo.jpg Graphic file (type jpg)
 
 <use ./fig/logo/INRA_logo.jpg>
-Package pdftex.def Info: ./fig/logo/INRA_logo.jpg used on input line 188.
+Package pdftex.def Info: ./fig/logo/INRA_logo.jpg used on input line 191.
 (pdftex.def)             Requested size: 368.38243pt x 143.38354pt.
 File: ./fig/logo/logo_EDMI.png Graphic file (type png)
  <use ./fig/logo/logo_EDMI.png>
-Package pdftex.def Info: ./fig/logo/logo_EDMI.png used on input line 188.
+Package pdftex.def Info: ./fig/logo/logo_EDMI.png used on input line 191.
 (pdftex.def)             Requested size: 741.61824pt x 143.38354pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./fig/logo/logo_LaBRI.png> <./images/pronotum.JPG> <./images/pronotum.png> <.
 /images/data_aug.png (PNG copy)> <./images/elementary_block.png (PNG copy)> <./
 images/net3.png (PNG copy)> <./images/Prono_115-eps-converted-to.pdf> <./images
-/Prono_036-eps-converted-to.pdf> <./images/chart2.png (PNG copy)> </usr/share/t
-exlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf> <./fig/logo/logo_
-UB.jpg> <./fig/logo/logo_CNRS.jpg> <./fig/logo/logo_INP.png> <./fig/logo/INRA_l
-ogo.jpg> <./fig/logo/logo_EDMI.png>]
+/Prono_036-eps-converted-to.pdf> <./images/chart2.png (PNG copy)> <./fig/logo/l
+ogo_UB.jpg> <./fig/logo/logo_CNRS.jpg> <./fig/logo/logo_INP.png> <./fig/logo/IN
+RA_logo.jpg> <./fig/logo/logo_EDMI.png>]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1816,21 +1815,21 @@ ogo.jpg> <./fig/logo/logo_EDMI.png>]
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
 
 (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 192.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 20448 strings out of 493029
- 373912 string characters out of 6136234
- 517647 words of memory out of 5000000
- 23463 multiletter control sequences out of 15000+600000
+ 20450 strings out of 493029
+ 373959 string characters out of 6136234
+ 517629 words of memory out of 5000000
+ 23465 multiletter control sequences out of 15000+600000
  34057 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,32n,68p,477b,1421s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1843,9 +1842,9 @@ t/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (1 page, 1957642 bytes).
+Output written on main.pdf (1 page, 1955875 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  5 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
